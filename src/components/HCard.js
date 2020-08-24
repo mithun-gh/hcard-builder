@@ -10,42 +10,46 @@ function HCardComponent({ details, className }) {
         </h4>
       </div>
       <div className="body">
-        <div class="row">
-          <div class="col">
-            <span class="label">Email</span>
-            <span class="text">{details.email}</span>
+        <div className="row">
+          <div className="col">
+            <span className="label">Email</span>
+            <span className="email text">{details.email}</span>
           </div>
         </div>
-        <div class="row">
-          <div class="col">
-            <span class="label">Phone</span>
-            <span class="text">{details.phone}</span>
+        <div className="row">
+          <div className="col">
+            <span className="label">Phone</span>
+            <span className="tel text">{details.phone}</span>
           </div>
         </div>
-        <div class="row">
-          <div class="col">
-            <span class="label">Address</span>
-            <span class="text">
-              {details.houseName} {details.street}
-            </span>
+        <div className="adr">
+          <div className="row">
+            <div className="col">
+              <span className="label">Address</span>
+              <span className="text">
+                <span className="post-office-box">{details.houseName}&nbsp;</span>
+                <span className="street-address">{details.street}</span>
+              </span>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <span class="label"></span>
-            <span class="text">
-              {details.suburb} {details.state}
-            </span>
+          <div className="row">
+            <div className="col">
+              <span className="label"></span>
+              <span className="text">
+                <span className="locality">{details.suburb}&nbsp;</span>
+                <span className="region">{details.state}</span>
+              </span>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <span class="label">Postcode</span>
-            <span class="text">{details.postcode}</span>
-          </div>
-          <div class="col">
-            <span class="label">Country</span>
-            <span class="text">{details.country}</span>
+          <div className="row">
+            <div className="col">
+              <span className="label">Postcode</span>
+              <span className="postal-code text">{details.postcode}</span>
+            </div>
+            <div className="col">
+              <span className="label">Country</span>
+              <span className="country-name text">{details.country}</span>
+            </div>
           </div>
         </div>
       </div>
