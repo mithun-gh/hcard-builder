@@ -9,7 +9,46 @@ function HCardComponent({ details, className }) {
           {details.givenName} {details.surname}
         </h4>
       </div>
-      <div className="body"></div>
+      <div className="body">
+        <div class="row">
+          <div class="col">
+            <span class="label">Email</span>
+            <span class="value">{details.email}</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <span class="label">Phone</span>
+            <span class="value">{details.phone}</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <span class="label">Address</span>
+            <span class="value">
+              {details.houseName} {details.street}
+            </span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <span class="label"></span>
+            <span class="value">
+              {details.suburb} {details.state}
+            </span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <span class="label">Postcode</span>
+            <span class="value">{details.postcode}</span>
+          </div>
+          <div class="col">
+            <span class="label">Country</span>
+            <span class="value">{details.country}</span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
@@ -29,9 +68,33 @@ const HCard = styled(HCardComponent)`
   }
 
   .body {
-    height: 200px;
+    height: 210px;
+    padding: 32px 24px;
     background-color: #fff;
     border-bottom: 2px solid #00000080;
+  }
+
+  .label {
+    display: inline-block;
+    width: 70px;
+    font-size: 10px;
+    color: #34495e;
+    text-transform: uppercase;
+  }
+
+  .value {
+    font-size: 16px;
+    font-family: Merriweather;
+  }
+
+  .row {
+    display: flex;
+    border-bottom: 1px solid #e4e8e9;
+    margin-bottom: 14px;
+  }
+
+  .col {
+    flex: 1;
   }
 `;
 

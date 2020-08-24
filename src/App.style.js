@@ -33,6 +33,13 @@ export const InputSection = styled.div`
 
 export const PreviewSection = styled.div`
   flex: 520px;
-  padding: 136px 45px;
+  padding: 126px 45px;
   background-color: #e0e4e7;
+`;
+
+export const Legend = styled.div`
+  color: #95a5a6;
+  font-size: 16px;
+  text-align: right;
+  margin-bottom: 10px;
 `;
