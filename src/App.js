@@ -1,8 +1,13 @@
 import React from "react";
-import "./App.css";
+
+import Button from "./ui-components/Button";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Button primary>Create hCard</Button>
+    </>
+  );
 }
 
 export default App;
