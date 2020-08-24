@@ -1,30 +1,58 @@
 import React from "react";
+import { Formik, Form } from "formik";
 
 import { Container, InputSection } from "./App.style";
 import { Button, Subtitle, TextBox, Title } from "./ui-components";
 
+const initialValues = {
+  givenName: "",
+  surname: "",
+  email: "",
+  phone: "",
+  houseName: "",
+  street: "",
+  suburb: "",
+  state: "",
+  postcode: "",
+  country: "",
+};
+
 function App() {
   return (
     <>
-      <Container>
-        <InputSection>
-          <Title>hCard Builder</Title>
-          <Subtitle>Personal Details</Subtitle>
-          <TextBox label="Given Name"></TextBox>
-          <TextBox label="Surname"></TextBox>
-          <TextBox label="Email"></TextBox>
-          <TextBox label="Phone"></TextBox>
-          <Subtitle>Address</Subtitle>
-          <TextBox label="House Name or #"></TextBox>
-          <TextBox label="Street"></TextBox>
-          <TextBox label="Suburb"></TextBox>
-          <TextBox label="State"></TextBox>
-          <TextBox label="Postcode"></TextBox>
-          <TextBox label="Country"></TextBox>
-          <Button>Upload Avatar</Button>
-          <Button primary>Create hCard</Button>
-        </InputSection>
-      </Container>
+      <Formik
+        initialValues={initialValues}
+        onSubmit={(values, { setSubmitting }) => {
+          console.log("SUBMIT:", values);
+          setSubmitting(false);
+        }}
+      >
+        {({ isSubmitting }) => (
+          <Form>
+            <Container>
+              <InputSection>
+                <Title>hCard Builder</Title>
+                <Subtitle>Personal Details</Subtitle>
+                <TextBox name="givenName" label="Given Name" />
+                <TextBox name="surname" label="Surname" />
+                <TextBox name="email" label="Email" />
+                <TextBox name="phone" label="Phone" />
+                <Subtitle>Address</Subtitle>
+                <TextBox name="houseName" label="House Name or #" />
+                <TextBox name="street" label="Street" />
+                <TextBox name="suburb" label="Suburb" />
+                <TextBox name="state" label="State" />
+                <TextBox name="postcode" label="Postcode" />
+                <TextBox name="country" label="Country" />
+                <Button>Upload Avatar</Button>
+                <Button type="submit" primary>
+                  Create hCard
+                </Button>
+              </InputSection>
+            </Container>
+          </Form>
+        )}
+      </Formik>
     </>
   );
 }

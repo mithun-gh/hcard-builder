@@ -1,12 +1,14 @@
 import React from "react";
+import { useField } from "formik";
 import styled from "styled-components";
 
-function TextBoxComponent({ label, className }) {
+function TextBoxComponent({ label, className, ...props }) {
+  const [field] = useField(props.name);
   return (
     <>
       <div className={className}>
         <label>{label}</label>
-        <input type="text"></input>
+        <input type="text" {...field}></input>
       </div>
     </>
   );

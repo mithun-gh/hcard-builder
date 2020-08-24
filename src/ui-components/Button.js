@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Button = styled.button.attrs(() => ({ className: "button" }))`
+export const Button = styled.button.attrs(({ type }) => ({ type, className: "button" }))`
   height: 48px;
   min-width: 190px;
   padding: 12px 28px;
