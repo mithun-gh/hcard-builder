@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Subtitle = styled.h6`
+export const Subtitle = styled.h6.attrs(() => ({ className: "subtitle" }))`
   color: var(--secondary-text-color);
   font-size: 10px;
   text-transform: uppercase;

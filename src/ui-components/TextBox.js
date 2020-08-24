@@ -12,7 +12,9 @@ function TextBoxComponent({ label, className }) {
   );
 }
 
-export const TextBox = styled(TextBoxComponent)`
+export const TextBox = styled(TextBoxComponent).attrs(() => ({ className: "text-box" }))`
+  width: 190px;
+
   label {
     display: block;
     margin-bottom: 4px;
@@ -24,8 +26,8 @@ export const TextBox = styled(TextBoxComponent)`
   input[type="text"] {
     font-size: 16px;
     font-family: Merriweather;
+    width: 100%;
     height: 35px;
-    min-width: 190px;
     padding: 8px 10px;
     border-radius: 4px;
     border: solid 1px #c3c4c3;

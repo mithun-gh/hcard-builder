@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-export const Button = styled.button`
+export const Button = styled.button.attrs(() => ({ className: "button" }))`
   height: 48px;
   min-width: 190px;
   padding: 12px 28px;
-  font-size: 20px;
+  font-size: 18px;
   cursor: pointer;
   border: none;
   border-radius: 4px;
