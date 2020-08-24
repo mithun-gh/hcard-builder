@@ -20,7 +20,11 @@ html {
 
 body {
   margin: 0;
+  height: 90vh;
   font-family: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

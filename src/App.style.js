@@ -1,11 +1,15 @@
 import styled from "styled-components";
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  display: flex;
+  width: 1000px;
+  border: 1px solid #9a9a9a80;
+`;
 
 export const InputSection = styled.div`
+  flex: 480px;
   display: grid;
   padding: 40px;
-  width: 480px;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 20px;
 
@@ -28,5 +32,7 @@ export const InputSection = styled.div`
 `;
 
 export const PreviewSection = styled.div`
-  margin: 45px 136px;
+  flex: 520px;
+  padding: 136px 45px;
+  background-color: #e0e4e7;
 `;
