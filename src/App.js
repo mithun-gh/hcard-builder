@@ -2,7 +2,7 @@ import React from "react";
 import { Formik, Form } from "formik";
 
 import { Container, InputSection, Legend, PreviewSection } from "./App.style";
-import { Button, Subtitle, TextBox, Title } from "./ui-components";
+import { Button, FileInput, Subtitle, TextBox, Title } from "./ui-components";
 
 import HCard from "./components/HCard";
 
@@ -45,7 +45,7 @@ function App() {
                 <TextBox name="state" label="State" />
                 <TextBox name="postcode" label="Postcode" />
                 <TextBox name="country" label="Country" />
-                <Button>Upload Avatar</Button>
+                <FileInput text="Upload Avatar"></FileInput>
                 <Button type="submit" primary disabled={isSubmitting}>
                   Create hCard
                 </Button>
