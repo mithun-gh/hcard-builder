@@ -1,8 +1,10 @@
 import React from "react";
 import { Formik, Form } from "formik";
 
-import { Container, InputSection } from "./App.style";
+import { Container, InputSection, PreviewSection } from "./App.style";
 import { Button, Subtitle, TextBox, Title } from "./ui-components";
+
+import HCard from "./components/HCard";
 
 const initialValues = {
   givenName: "",
@@ -22,12 +24,11 @@ function App() {
     <>
       <Formik
         initialValues={initialValues}
-        onSubmit={(values, { setSubmitting }) => {
-          console.log("SUBMIT:", values);
+        onSubmit={(_, { setSubmitting }) => {
           setSubmitting(false);
         }}
       >
-        {({ isSubmitting }) => (
+        {({ values, isSubmitting }) => (
           <Form>
             <Container>
               <InputSection>
@@ -45,10 +46,13 @@ function App() {
                 <TextBox name="postcode" label="Postcode" />
                 <TextBox name="country" label="Country" />
                 <Button>Upload Avatar</Button>
-                <Button type="submit" primary>
+                <Button type="submit" primary disabled={isSubmitting}>
                   Create hCard
                 </Button>
               </InputSection>
+              <PreviewSection>
+                <HCard details={values} />
+              </PreviewSection>
             </Container>
           </Form>
         )}
