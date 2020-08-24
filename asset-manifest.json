@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.af3c4f40.chunk.css",
-    "main.js": "/static/js/main.1dca91f6.chunk.js",
-    "main.js.map": "/static/js/main.1dca91f6.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.8f817bc4.js",
-    "runtime-main.js.map": "/static/js/runtime-main.8f817bc4.js.map",
-    "static/css/2.764ccc25.chunk.css": "/static/css/2.764ccc25.chunk.css",
-    "static/js/2.a50d4614.chunk.js": "/static/js/2.a50d4614.chunk.js",
-    "static/js/2.a50d4614.chunk.js.map": "/static/js/2.a50d4614.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.a46cd8bc46ddd179449fcdc2e1019053.js": "/precache-manifest.a46cd8bc46ddd179449fcdc2e1019053.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.764ccc25.chunk.css.map": "/static/css/2.764ccc25.chunk.css.map",
-    "static/css/main.af3c4f40.chunk.css.map": "/static/css/main.af3c4f40.chunk.css.map",
-    "static/js/2.a50d4614.chunk.js.LICENSE.txt": "/static/js/2.a50d4614.chunk.js.LICENSE.txt"
+    "main.css": "/hcard-builder/static/css/main.af3c4f40.chunk.css",
+    "main.js": "/hcard-builder/static/js/main.84d1639b.chunk.js",
+    "main.js.map": "/hcard-builder/static/js/main.84d1639b.chunk.js.map",
+    "runtime-main.js": "/hcard-builder/static/js/runtime-main.a39d581b.js",
+    "runtime-main.js.map": "/hcard-builder/static/js/runtime-main.a39d581b.js.map",
+    "static/css/2.764ccc25.chunk.css": "/hcard-builder/static/css/2.764ccc25.chunk.css",
+    "static/js/2.90a8154e.chunk.js": "/hcard-builder/static/js/2.90a8154e.chunk.js",
+    "static/js/2.90a8154e.chunk.js.map": "/hcard-builder/static/js/2.90a8154e.chunk.js.map",
+    "index.html": "/hcard-builder/index.html",
+    "precache-manifest.d3709dfce544a5e5267378a8b11aec7b.js": "/hcard-builder/precache-manifest.d3709dfce544a5e5267378a8b11aec7b.js",
+    "service-worker.js": "/hcard-builder/service-worker.js",
+    "static/css/2.764ccc25.chunk.css.map": "/hcard-builder/static/css/2.764ccc25.chunk.css.map",
+    "static/css/main.af3c4f40.chunk.css.map": "/hcard-builder/static/css/main.af3c4f40.chunk.css.map",
+    "static/js/2.90a8154e.chunk.js.LICENSE.txt": "/hcard-builder/static/js/2.90a8154e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.8f817bc4.js",
+    "static/js/runtime-main.a39d581b.js",
     "static/css/2.764ccc25.chunk.css",
-    "static/js/2.a50d4614.chunk.js",
+    "static/js/2.90a8154e.chunk.js",
     "static/css/main.af3c4f40.chunk.css",
-    "static/js/main.1dca91f6.chunk.js"
+    "static/js/main.84d1639b.chunk.js"
   ]
 }
