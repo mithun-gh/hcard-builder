@@ -17,6 +17,7 @@ const initialValues = {
   state: "",
   postcode: "",
   country: "",
+  photo: "default.png",
 };
 
 function App() {
@@ -45,7 +46,7 @@ function App() {
                 <TextBox name="state" label="State" />
                 <TextBox name="postcode" label="Postcode" />
                 <TextBox name="country" label="Country" />
-                <FileInput text="Upload Avatar"></FileInput>
+                <FileInput name="photo" text="Upload Avatar"></FileInput>
                 <Button type="submit" primary disabled={isSubmitting}>
                   Create hCard
                 </Button>

@@ -1,10 +1,21 @@
 import React from "react";
+import { useField } from "formik";
 import styled from "styled-components";
 
-function InputFileComponent({ text, className }) {
+function InputFileComponent({ text, className, ...props }) {
+  const [, , { setValue }] = useField(props.name);
   return (
     <div className={className}>
-      <input type="file" id="file" />
+      <input
+        type="file"
+        id="file"
+        onChange={(event) => {
+          const reader = new FileReader();
+          const file = event.currentTarget.files[0];
+          reader.readAsDataURL(file);
+          reader.onloadend = () => setValue(reader.result);
+        }}
+      />
       <label htmlFor="file">{text}</label>
     </div>
   );
