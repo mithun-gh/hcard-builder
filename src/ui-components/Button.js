@@ -10,7 +10,8 @@ const Button = styled.button`
   border-radius: 4px;
   border-bottom: 2px solid #00000080;
   color: #fff;
-  background-color: ${(props) => (props.primary ? "#3498db" : "#627b8b")};
+  background-color: ${(props) =>
+    props.primary ? "var(--primary-color)" : "var(--secondary-color)"};
 
   &:hover {
     filter: brightness(0.9);

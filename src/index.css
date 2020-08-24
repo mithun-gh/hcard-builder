@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700;800&family=Merriweather:wght@400;700&display=swap");
 
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #627b8b;
+  --primary-text-color: #2c3e50;
+  --secondary-text-color: #b0b8bc;
+}
+
 html {
   font-family: "Merriweather Sans", sans-serif;
 }
