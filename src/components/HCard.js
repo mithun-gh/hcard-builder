@@ -8,7 +8,7 @@ function HCardComponent({ details, className }) {
         <h4 className="fn">
           {details.givenName} {details.surname}
         </h4>
-        <img class="photo" src={details.photo ?? "default.png"} alt="photo" />
+        <img className="photo" src={details.photo ?? "default.png"} alt="photo" />
       </div>
       <div className="body">
         <div className="row">
