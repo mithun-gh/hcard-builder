@@ -12,20 +12,20 @@ function HCardComponent({ details, className }) {
       <div className="body">
         <div className="row">
           <div className="col">
-            <span className="label">Email</span>
+            <span className="prop">Email</span>
             <span className="email text">{details.email}</span>
           </div>
         </div>
         <div className="row">
           <div className="col">
-            <span className="label">Phone</span>
+            <span className="prop">Phone</span>
             <span className="tel text">{details.phone}</span>
           </div>
         </div>
         <div className="adr">
           <div className="row">
             <div className="col">
-              <span className="label">Address</span>
+              <span className="prop">Address</span>
               <span className="text">
                 <span className="post-office-box">{details.houseName}&nbsp;</span>
                 <span className="street-address">{details.street}</span>
@@ -34,7 +34,7 @@ function HCardComponent({ details, className }) {
           </div>
           <div className="row">
             <div className="col">
-              <span className="label"></span>
+              <span className="prop"></span>
               <span className="text">
                 <span className="locality">{details.suburb}&nbsp;</span>
                 <span className="region">{details.state}</span>
@@ -43,11 +43,11 @@ function HCardComponent({ details, className }) {
           </div>
           <div className="row">
             <div className="col">
-              <span className="label">Postcode</span>
+              <span className="prop">Postcode</span>
               <span className="postal-code text">{details.postcode}</span>
             </div>
             <div className="col">
-              <span className="label">Country</span>
+              <span className="prop">Country</span>
               <span className="country-name text">{details.country}</span>
             </div>
           </div>
@@ -78,7 +78,7 @@ const HCard = styled(HCardComponent)`
     border-bottom: 2px solid #00000080;
   }
 
-  .label {
+  .prop {
     display: inline-block;
     width: 70px;
     font-size: 10px;
