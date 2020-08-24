@@ -8,6 +8,7 @@ function HCardComponent({ details, className }) {
         <h4 className="fn">
           {details.givenName} {details.surname}
         </h4>
+        <img class="photo" src={details.photo ?? "default.png"} alt="photo" />
       </div>
       <div className="body">
         <div className="row">
@@ -60,6 +61,7 @@ function HCardComponent({ details, className }) {
 const HCard = styled(HCardComponent)`
   width: 430px;
   height: 300px;
+  position: absolute;
 
   .header {
     height: 100px;
@@ -69,6 +71,16 @@ const HCard = styled(HCardComponent)`
     font-size: 24px;
     font-weight: bold;
     background-color: #2c3e50;
+  }
+
+  .photo {
+    position: absolute;
+    top: 12px;
+    right: 24px;
+    width: 84px;
+    height: 104px;
+    background-color: #fff;
+    box-shadow: 0px 1px 1px 0 rgba(154, 154, 154, 0.75);
   }
 
   .body {
