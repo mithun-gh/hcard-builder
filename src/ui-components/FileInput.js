@@ -42,6 +42,7 @@ export const FileInput = styled(InputFileComponent).attrs(() => ({ className: "b
     border-radius: 4px;
     border-bottom: 2px solid #00000080;
     color: #fff;
+    text-align: center;
     outline: none;
     background-color: var(--secondary-color);
     -webkit-user-select: none;

@@ -29,6 +29,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media only screen and (max-width: 1000px) {
+  body {
+    display: inherit;
+  }
+}
+
 input,
 button {
   outline: none;

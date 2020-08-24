@@ -10,6 +10,7 @@ export const Button = styled.button.attrs(({ type }) => ({ type, className: "but
   border-radius: 4px;
   border-bottom: 2px solid #00000080;
   color: #fff;
+  text-align: center;
   background-color: ${(props) =>
     props.primary ? "var(--primary-color)" : "var(--secondary-color)"};
 

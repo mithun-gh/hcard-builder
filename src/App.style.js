@@ -4,6 +4,12 @@ export const Container = styled.div`
   display: flex;
   width: 1000px;
   border: 1px solid #9a9a9a80;
+
+  @media only screen and (max-width: 1000px) {
+    width: 100%;
+    border: none;
+    flex-direction: column;
+  }
 `;
 
 export const InputSection = styled.div`
@@ -29,17 +35,25 @@ export const InputSection = styled.div`
   .button {
     margin-top: 16px;
   }
+
+  @media only screen and (max-width: 1000px) {
+    .text-box {
+      width: 100%;
+    }
+  }
 `;
 
 export const PreviewSection = styled.div`
   flex: 520px;
   padding: 126px 45px;
+  border-left: 4px solid #d2d6d8;
   background-color: #e0e4e7;
-`;
 
-export const Legend = styled.div`
-  color: #95a5a6;
-  font-size: 16px;
-  text-align: right;
-  margin-bottom: 10px;
+  @media only screen and (max-width: 1000px) {
+    border: none;
+    padding: 35px;
+    border-top: 4px solid #d2d6d8;
+    display: flex;
+    justify-content: center;
+  }
 `;

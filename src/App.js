@@ -1,7 +1,7 @@
 import React from "react";
 import { Formik, Form } from "formik";
 
-import { Container, InputSection, Legend, PreviewSection } from "./App.style";
+import { Container, InputSection, PreviewSection } from "./App.style";
 import { Button, FileInput, Subtitle, TextBox, Title } from "./ui-components";
 
 import HCard from "./components/HCard";
@@ -52,8 +52,7 @@ function App() {
                 </Button>
               </InputSection>
               <PreviewSection>
-                <Legend>HCARD PREVIEW</Legend>
-                <HCard details={values} />
+                <HCard title="hCard Preview" details={values} />
               </PreviewSection>
             </Container>
           </Form>

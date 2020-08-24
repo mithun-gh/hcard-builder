@@ -1,55 +1,58 @@
 import React from "react";
 import styled from "styled-components";
 
-function HCardComponent({ details, className }) {
+function HCardComponent({ details, title, className }) {
   return (
-    <div className={"vcard " + className ?? ""}>
-      <div className="header">
-        <h4 className="fn">
-          {details.givenName} {details.surname}
-        </h4>
-        <img className="photo" src={details.photo} alt="photograph" />
-      </div>
-      <div className="body">
-        <div className="row">
-          <div className="col">
-            <span className="prop">Email</span>
-            <span className="email text">{details.email}</span>
-          </div>
+    <div className={"box " + className}>
+      <div class="legend">{title}</div>
+      <div className="vcard">
+        <div className="header">
+          <h4 className="fn">
+            {details.givenName} {details.surname}
+          </h4>
+          <img className="photo" src={details.photo} alt="photograph" />
         </div>
-        <div className="row">
-          <div className="col">
-            <span className="prop">Phone</span>
-            <span className="tel text">{details.phone}</span>
-          </div>
-        </div>
-        <div className="adr">
+        <div className="body">
           <div className="row">
             <div className="col">
-              <span className="prop">Address</span>
-              <span className="text">
-                <span className="post-office-box">{details.houseName}&nbsp;</span>
-                <span className="street-address">{details.street}</span>
-              </span>
+              <span className="prop">Email</span>
+              <span className="email text">{details.email}</span>
             </div>
           </div>
           <div className="row">
             <div className="col">
-              <span className="prop"></span>
-              <span className="text">
-                <span className="locality">{details.suburb}&nbsp;</span>
-                <span className="region">{details.state}</span>
-              </span>
+              <span className="prop">Phone</span>
+              <span className="tel text">{details.phone}</span>
             </div>
           </div>
-          <div className="row">
-            <div className="col">
-              <span className="prop">Postcode</span>
-              <span className="postal-code text">{details.postcode}</span>
+          <div className="adr">
+            <div className="row">
+              <div className="col">
+                <span className="prop">Address</span>
+                <span className="text">
+                  <span className="post-office-box">{details.houseName}&nbsp;</span>
+                  <span className="street-address">{details.street}</span>
+                </span>
+              </div>
             </div>
-            <div className="col">
-              <span className="prop">Country</span>
-              <span className="country-name text">{details.country}</span>
+            <div className="row">
+              <div className="col">
+                <span className="prop"></span>
+                <span className="text">
+                  <span className="locality">{details.suburb}&nbsp;</span>
+                  <span className="region">{details.state}</span>
+                </span>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col">
+                <span className="prop">Postcode</span>
+                <span className="postal-code text">{details.postcode}</span>
+              </div>
+              <div className="col">
+                <span className="prop">Country</span>
+                <span className="country-name text">{details.country}</span>
+              </div>
             </div>
           </div>
         </div>
@@ -63,6 +66,14 @@ const HCard = styled(HCardComponent)`
   height: 300px;
   position: absolute;
 
+  .legend {
+    color: #95a5a6;
+    font-size: 16px;
+    text-align: right;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
   .header {
     height: 100px;
     padding: 24px 56px 24px 20px;
@@ -75,7 +86,7 @@ const HCard = styled(HCardComponent)`
 
   .photo {
     position: absolute;
-    top: 12px;
+    top: 42px;
     right: 24px;
     width: 84px;
     height: 104px;
