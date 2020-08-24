@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Button = styled.button`
+export const Button = styled.button`
   height: 48px;
   min-width: 190px;
   padding: 12px 28px;
@@ -17,5 +17,3 @@ const Button = styled.button`
     filter: brightness(0.9);
   }
 `;
-
-export default Button;

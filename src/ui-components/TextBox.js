@@ -12,7 +12,7 @@ function TextBoxComponent({ label, className }) {
   );
 }
 
-const TextBox = styled(TextBoxComponent)`
+export const TextBox = styled(TextBoxComponent)`
   label {
     display: block;
     margin-bottom: 4px;
@@ -35,5 +35,3 @@ const TextBox = styled(TextBoxComponent)`
     }
   }
 `;
-
-export default TextBox;
