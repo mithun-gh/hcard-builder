@@ -13,19 +13,19 @@ function HCardComponent({ details, className }) {
         <div class="row">
           <div class="col">
             <span class="label">Email</span>
-            <span class="value">{details.email}</span>
+            <span class="text">{details.email}</span>
           </div>
         </div>
         <div class="row">
           <div class="col">
             <span class="label">Phone</span>
-            <span class="value">{details.phone}</span>
+            <span class="text">{details.phone}</span>
           </div>
         </div>
         <div class="row">
           <div class="col">
             <span class="label">Address</span>
-            <span class="value">
+            <span class="text">
               {details.houseName} {details.street}
             </span>
           </div>
@@ -33,7 +33,7 @@ function HCardComponent({ details, className }) {
         <div class="row">
           <div class="col">
             <span class="label"></span>
-            <span class="value">
+            <span class="text">
               {details.suburb} {details.state}
             </span>
           </div>
@@ -41,11 +41,11 @@ function HCardComponent({ details, className }) {
         <div class="row">
           <div class="col">
             <span class="label">Postcode</span>
-            <span class="value">{details.postcode}</span>
+            <span class="text">{details.postcode}</span>
           </div>
           <div class="col">
             <span class="label">Country</span>
-            <span class="value">{details.country}</span>
+            <span class="text">{details.country}</span>
           </div>
         </div>
       </div>
@@ -82,7 +82,7 @@ const HCard = styled(HCardComponent)`
     text-transform: uppercase;
   }
 
-  .value {
+  .text {
     font-size: 16px;
     font-family: Merriweather;
   }
