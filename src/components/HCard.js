@@ -4,7 +4,7 @@ import styled from "styled-components";
 function HCardComponent({ details, title, className }) {
   return (
     <div className={"box " + className}>
-      <div class="legend">{title}</div>
+      <div className="legend">{title}</div>
       <div className="vcard">
         <div className="header">
           <h4 className="fn">
